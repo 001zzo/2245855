@@ -33,3 +33,45 @@ Hyperparameter tuning slightly improved accuracy, but did not significantly enha
 
 5. Prediction
 The final model was tested on unseen data from the test set. Additionally, a single sample prediction was performed to demonstrate how the model works in practice. The predicted value was compared with the actual value, confirming that the model can make correct predictions on new data.
+
+Jupyter notebook structure
+The notebook is structured in a clear step-by-step process.
+It starts with data loading and exploration using pandas.
+Then data preprocessing is applied, including handling missing values.
+The dataset is split into training and testing sets.
+Machine learning models are trained and evaluated.
+Finally, predictions are made on unseen data.
+
+Future work
+Improve model performance using advanced hyperparameter tuning (GridSearchCV).
+Try additional models such as SVM or KNN.
+Apply feature engineering to improve data quality.
+Handle class imbalance using techniques such as SMOTE.
+Improve detection of drinkable water (class 1).
+
+Libraries and modules
+pandas (import pandas as pd) – used for loading, cleaning and manipulating the dataset.
+numpy (import numpy as np) – used for numerical operations and handling arrays.
+matplotlib.pyplot (import matplotlib.pyplot as plt) – used for plotting graphs and visualisations.
+seaborn (import seaborn as sns) – used for creating advanced visualisations such as heatmaps.
+sklearn.model_selection (train_test_split) – used to split the dataset into training and testing sets.
+sklearn.linear_model (LogisticRegression) – used to build the baseline classification model.
+sklearn.ensemble (RandomForestClassifier) – used to build the main machine learning model.
+sklearn.metrics (accuracy_score, confusion_matrix, classification_report) – used to evaluate model performance.
+
+Unfixed bugs
+No major bugs were found in the project.
+Some warnings appeared due to class imbalance in the dataset.
+These warnings do not affect the final results.
+
+Acknowledgements and References
+The dataset was taken from Kaggle (Water Potability dataset).
+ChatGPT was used to assist with explanations, debugging and structuring the code.
+Some ideas were inspired by lecture materials, class examples, YouTube videos. 
+
+Conclusions
+The project successfully applied machine learning to predict water potability.
+Logistic Regression showed weak performance.
+Random Forest achieved the best results.
+Hyperparameter tuning slightly improved performance.
+The final model demonstrates good accuracy but can be improved further.
